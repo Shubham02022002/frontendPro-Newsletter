@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    
+    <style>
+      button:hover {
+        background-color: white;
+        color: black;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          margin: 20px !important;
+        }
+        main {
+          width: 100%;
+          padding: 10px;
+        }
+      }
+    </style>
+    <title>Newsletter</title>
+  </head>
+  <body style="background-color: #eaf2f2; align-items: center; margin: 100px">
+    <main
+      style="
+        width: 879px;
+        margin-top: auto;
+        margin: auto;
+        display: flex;
+        text-align: center;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+      "
+    >
+      <form  style="display: grid-row; margin: 20px; padding: 2px;" method="dialog" id="data">
+        <h1 style="font-family: Open Sans; font-weight: 500; font-weight: bold">
+          Level Up Your Frontend Skills
+        </h1>
+        <p class="about" style="font-family: Open Sans; font-weight: 300">
+          Sign up for our free newsletter to receive weekly coding challenges
+          that will help<br />
+          you improve your frontend development skills.
+        </p>
+        <input
+          width="70%"
+          id="email"
+          type="email"
+          name="Email"
+          placeholder="Enter your email address"
+          autocomplete="email"
+        />
+        <button
+          id="btn"
+          style="
+            background-color: black;
+            color: #ffffff;
+            border: solid black 1px;
+          "
+          onclick="foo()"
+        >
+          Subscribe
+        </button>
+        <p class="tc" style="font-family: Open Sans; font-style: normal">
+          <input id="check" type="checkbox" required />By clicking this box, you
+          agree to receive our weekly newsletter containing coding challenges,
+          tips, and other<br />related content. You may unsubscribe from the
+          newsletter at any time.
+        </p>
+      </form>
+    </main>
+
+    <script src="./src/script.js"></script>
+  </body>
+</html>
